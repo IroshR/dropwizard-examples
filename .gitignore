@@ -1,0 +1,8 @@
+
+*.iws
+*.ipr
+*.iml
+*/.idea/
+*.log
+*/target/*
+dropwizard_eclipselink/target/.*
