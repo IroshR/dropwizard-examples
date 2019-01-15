@@ -6,6 +6,9 @@
         <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
 
         <class>com.iroshnk.dropwizarde.model.User</class>
+        <class>com.iroshnk.dropwizarde.model.Order</class>
+        <class>com.iroshnk.dropwizarde.model.OrderItem</class>
+        <class>com.iroshnk.dropwizarde.model.Product</class>
 
         <shared-cache-mode>ENABLE_SELECTIVE</shared-cache-mode>
         <properties>

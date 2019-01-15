@@ -22,7 +22,6 @@ public class UserManagement {
     static Logger logger = Logger.getLogger(UserManagement.class.getName());
 
     public UserManagement(){
-
     }
 
     public CreationResponse create(CreateUserRequest api){
