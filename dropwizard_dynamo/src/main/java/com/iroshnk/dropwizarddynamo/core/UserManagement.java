@@ -25,6 +25,15 @@ public class UserManagement {
     public CreationResponse create(CreateUserRequest api) {
         CreationResponse response = new CreationResponse();
 
+        User old = userDao.getUserByEmail(api.email);
+        if(old != null ){
+            response.status = Status.RESPONSE_STATUS_FAIL;
+            response.message = "User email already exist.";
+
+            return response;
+        }
+
+
         User user = new User();
         user.setFirstName(api.firstName);
         user.setLastName(api.lastName);

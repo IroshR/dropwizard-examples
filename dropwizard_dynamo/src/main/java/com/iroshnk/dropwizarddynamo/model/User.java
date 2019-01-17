@@ -9,7 +9,7 @@ import java.util.Date;
 
 @ApiModel
 @DynamoDBDocument
-@DynamoDBTable(tableName = "ProductInfo")
+@DynamoDBTable(tableName = "USER")
 public class User {
 
     @DynamoDBHashKey(attributeName = "user_id")
